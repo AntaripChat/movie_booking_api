@@ -1,2 +1,2 @@
 # movieapp_backend
-Developing movie backend application
+Developing movie booking backend application
