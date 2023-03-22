@@ -16,7 +16,10 @@ const { DB_URL } = require('./configs/db.config');
         console.error('error getting while connecting mongoDB', err);
     }
 
-})()
+})();
+
+// call the routes
+require('./routes/movie.routes')(app);
 
 app.listen(PORT, ()=> {
     console.log(`server is running on port: ${PORT}, please access it on http://localhost:${PORT}`)
