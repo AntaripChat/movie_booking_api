@@ -21,6 +21,7 @@ const { DB_URL } = require('./configs/db.config');
 
 async function init(){
     try{
+    await Movie.collection.drop();
     await Movie.create({
         name: "Bachhan Pandey",
         description: "Comedy Masala Movie",
