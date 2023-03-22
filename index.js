@@ -6,7 +6,7 @@ const Movie = require('./models/movies.models');
 const { PORT } = require('./configs/server.config');
 const { DB_URL } = require('./configs/db.config');
 
-//IIFE
+//IIFE MongoDb connection
 (async ()=> {
     try{    
         await mongoose.connect(DB_URL);
@@ -19,6 +19,7 @@ const { DB_URL } = require('./configs/db.config');
 
 })();
 
+// Inserting default enteries in DB
 async function init(){
     try{
     await Movie.collection.drop();
@@ -83,6 +84,8 @@ catch(err){
     console.log('error while inserting default entries in DB', err);
 }
 }
+
+
 // call the routes
 require('./routes/movie.routes')(app);
 
