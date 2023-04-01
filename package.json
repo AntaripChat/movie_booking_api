@@ -1,35 +1,21 @@
 {
-  "name": "@paypalcorp/movieapp_backend",
+  "name": "movieapp_backend",
   "version": "1.0.0",
-  "description": "this application helps in booking the movie ticket",
+  "description": "its a project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "abc" : "echo hey I am from abc",
-    "prestart": "echo hey i am prestart",
-    "start": "NODE_ENV=development nodemon index.js"
-
+    "start": "nodemon index"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Arpitpurwar/movieapp_backend.git"
-  },
-  "keywords": [
-    "nodejs"
-  ],
-  "author": "Arpit Purwar",
+  "author": "Antarip",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Arpitpurwar/movieapp_backend/issues"
-  },
-  "homepage": "https://github.com/Arpitpurwar/movieapp_backend#readme",
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^7.0.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.21"
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.22"
   }
 }
